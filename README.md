@@ -1,3 +1,3 @@
 # Résumé
 
-https://root-io.github.io/resume
+https://root-io.github.io/
