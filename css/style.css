@@ -1,0 +1,100 @@
+@media print {
+  * {
+    display: none;
+  }
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  color: #111;
+}
+
+.content {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+.job .header .company,
+.project .header .name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1em 0 .5em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: #0074d9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.photo {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 64rem;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (max-width: 576px) {
+  .photo {
+    position: relative;
+    justify-content: flex-start;
+  }
+}
+
+.photo img {
+  width: 180px;
+  margin: 1em 0 .5em;
+}
+
+.role p {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags li {
+  color: #fff;
+  background-color: #000;
+  font-weight: 700;
+  margin: 5px;
+  padding: .5rem 1rem;
+  border-radius: 3px;
+}
+
+.tags li a {
+  color: #fff;
+}
+
+.job .header .company a,
+.project .header .name a {
+  font-size: 1.25rem;
+  color: #111;
+}
+
+.job .header .date,
+.project .header .date {
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0 7px;
+  padding: .25em 0;
+  color: #7a7a7a;
+}
