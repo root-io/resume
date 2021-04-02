@@ -22,7 +22,7 @@ h1,
 .project .header .name {
   font-size: 2rem;
   font-weight: 700;
-  margin: 1em 0 .5em;
+  margin: 1em 0 0.5em;
 }
 
 ul {
@@ -54,7 +54,7 @@ a:hover {
   background-color: #000;
   font-weight: 700;
   margin: 5px;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 3px;
 }
 
@@ -74,6 +74,31 @@ a:hover {
   font-weight: 300;
   font-style: italic;
   margin: 0 7px;
-  padding: .25em 0;
+  padding: 0.25em 0;
   color: #7a7a7a;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0c0c0d;
+    color: #fff;
+  }
+
+  .tags li {
+    color: #000;
+    background-color: #fff;
+  }
+
+  .tags li a {
+    color: #000;
+  }
+
+  .job .header .company a,
+  .project .header .name a {
+    color: #fff;
+  }
+
+  .marker {
+    filter: invert(1);
+  }
 }
